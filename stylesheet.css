@@ -1,0 +1,109 @@
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+body .main_wrapper {
+	max-width: 640px;
+	margin: auto;
+
+    
+}
+
+body .main_wrapper h1 {
+	margin-top: 100px;
+}
+
+body .row {
+	
+	padding: 0 10% 80px 10%;
+}
+
+body .inside_content {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	
+}
+/*********************************************************
+Header
+*********************************************************/
+header {
+	margin-top: 0px;
+	background-image: url('/var/www/html/header1.jpeg');
+	background-size:   cover;
+	background-repeat: no-repeat;
+	background-position: center center;  
+	height: 640px;
+	box-sizing: border-box;
+	
+}
+
+header .floater{
+	height: 25%;
+}
+
+header .header_container_1 {
+	margin: auto;
+	margin-top: 0px;
+	height: 250px;
+	width: 415px;
+	background-color: white;
+	opacity: 0.9;
+    filter: alpha(opacity=60);
+	align: center;
+	 /*for IE**/
+}
+
+header .header_container_1 h1 {
+	color: green;
+	padding-top: 10%;
+	margin-top: 0px;
+	opacity: 1;
+    filter: alpha(opacity=100);
+}
+header .input-group {
+	margin-left: 6%;
+	margin-right: 6%;
+}
+header .input-group .form-control {
+	width: 230px;
+}
+
+/*********************************************************
+Sticky footer
+*********************************************************/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.forFooter {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+  
+}
+.container .text-muted {
+  margin: 20px 0;
+  text-align: center;
+}
