@@ -84,6 +84,9 @@ header .input-group {
 header .input-group .form-control {
 	width: 230px;
 }
+header .input-group .email {
+	width: 230px;
+}
 
 /*********************************************************
 Sticky footer
