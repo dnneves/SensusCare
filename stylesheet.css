@@ -64,11 +64,11 @@ header {
 	background-position: center center;  
 	height: 640px;
 	box-sizing: border-box;
-	background-position: center center;  
+	background-position: center center;
 }
 
 header .floater{
-	height: 25%;
+	height: 5%;
 }
 
 header .header_container_1 {
@@ -77,15 +77,17 @@ header .header_container_1 {
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: auto;
-	height: 400px;
+	height: 420px;
 	width: 700px;
 	background-color: white;
 	opacity: 0.9;
     filter: alpha(opacity=60);
+	
 	 /*for IE**/
 }
 header .header_container_alt {
 	background-color:grey;
+	
 }
 
 header .header_container_1 h1 {
@@ -93,8 +95,15 @@ header .header_container_1 h1 {
 	margin-top: 0px;
 	opacity: 0.9;
     filter: alpha(opacity=100);
-	
+
 }
+header floater .header_container_1 p {
+	word-wrap: break-word;
+	width: 100px;
+
+}
+
+
 header .input-group {
 	margin-left: 6%;
 	margin-right: 6%;
@@ -109,7 +118,72 @@ header .input-group .email {
 header .input-group-addon {
 	width: auto;
 }
+/*********************************************************
+Coming Soon Wrapper
+*********************************************************/
+.wrapper {
+  margin: 50px auto;
+  /* width: 280px; */
+  /* height: 370px; */
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 8px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 90;
+}
 
+.ribbon-wrapper-green {
+  width: 85px;
+  height: 88px;
+  /* overflow: hidden; */
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+
+.ribbon-green {
+  font: bold 12px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #BFDC7A;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
+  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); 
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-green:before {
+  left: 0;
+}
+.ribbon-green:after {
+  right: 0;
+}
 	
 /*********************************************************
 Sticky footer
@@ -133,3 +207,93 @@ Sticky footer
   /* margin: 20px 0; */
   text-align: center;
 }
+
+
+/*********************************************************
+Responsivenes
+*********************************************************/
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+	header .header_container_1 #logoPicture {
+		width: 506px;
+		margin: 50px 0px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+	
+	header .header_container_1 #logoPicture {
+		width: 300px;
+		margin: 50px 0px;
+	}
+	
+	header .header_container_1 {
+		margin: auto;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: auto;
+		height: 360px;
+		width: 380px;
+		background-color: white;
+		opacity: 0.9;
+	    filter: alpha(opacity=60);
+		 /*for IE**/
+	}
+	
+	header .input-group .form-control {
+		width: 180px;
+	}
+	header .header_container_1 h1 {
+		font-size: 1.4em;
+		padding-top: 10%;
+		margin-top: 0px;
+		opacity: 0.9;
+	    filter: alpha(opacity=100);
+	}
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
+
+@media only screen and (max-width: 360px) {
+    /* small phones */
+	
+	header .header_container_1 #logoPicture {
+		width: 200px;
+		margin: 50px 0px;
+	}
+	
+	header .header_container_1 {
+		margin: auto;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: auto;
+		height: 360px;
+		width: 300px;
+		background-color: white;
+		opacity: 0.9;
+	    filter: alpha(opacity=60);
+		 /*for IE**/
+	}
+	
+	header .input-group .form-control {
+		width: 135px;
+	}
+	header .header_container_1 h1 {
+		font-size: 1.4em;
+		padding-top: 10%;
+		margin-top: 0px;
+		opacity: 0.9;
+	    filter: alpha(opacity=100);
+	}
+	
+}
+
+
+
